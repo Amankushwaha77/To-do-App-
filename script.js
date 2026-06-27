@@ -35,6 +35,7 @@ function createTask(text) {
         if (e.target.tagName !== "BUTTON") {
             li.classList.toggle("completed");
             saveTasks();
+            updateCounter();
         }
     });
 
