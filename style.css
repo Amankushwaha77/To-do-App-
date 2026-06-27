@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+}
+
+.container{
+    width:90%;
+    max-width:500px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+
+h1{
+    text-align:center;
+    color:white;
+    margin-bottom:20px;
+}
+
+.input-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.input-box input{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+}
+
+.input-box button{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    background:#00d9ff;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.input-box button:hover{
+    background:#00b8d4;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    background:rgba(255,255,255,.15);
+    color:white;
+    padding:12px;
+    border-radius:10px;
+    margin-bottom:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.edit-btn{
+    background:#28a745;
+    color:white;
+    border:none;
+    padding:6px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-right:6px;
+}
+.delete-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:6px 12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.task-info{
+    display:flex;
+    justify-content:space-between;
+    color:white;
+    margin:15px 0;
+    font-weight:bold;
+}
+
+.clear-btn{
+    width:100%;
+    padding:12px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:10px;
+    background:#ff3b30;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.clear-btn:hover{
+    background:#d63031;
+}
+.completed span{
+    text-decoration: line-through;
+    color: #00ff88;
+}
